@@ -10,10 +10,12 @@ filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
 
 syntax enable
-set background=dark
-"let g:gruvbox_termcolors=16
-let g:gruvbox_italic=1
-colorscheme gruvbox
+"set background=dark
+colorscheme wombat256mod
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 so ~/.vim/plugins
 
