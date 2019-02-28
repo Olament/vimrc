@@ -1,0 +1,13 @@
+call plug#begin('~/.vim/plugged')
+
+" A light and configurable statusline/tabline plugin for Vim
+Plug 'itchyny/lightline.vim'
+
+" Colorscheme manage
+Plug 'flazz/vim-colorschemes'
+
+" Intellisense
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
+
+" Initialize plugin system
+call plug#end()

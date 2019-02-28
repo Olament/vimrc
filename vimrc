@@ -9,6 +9,14 @@ set nocompatible
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
 
+syntax enable
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme molokai
+
+so ~/.vim/plugins
+
+set number                 " display line numbers
 set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
 set softtabstop =4         " Tab key indents by 4 spaces.
@@ -61,3 +69,4 @@ set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
