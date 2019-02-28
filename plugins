@@ -6,6 +6,9 @@ Plug 'itchyny/lightline.vim'
 " Colorscheme manage
 Plug 'flazz/vim-colorschemes'
 
+" GruvBox
+Plug 'morhetz/gruvbox'
+
 " Intellisense
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': 'yarn install'}
 

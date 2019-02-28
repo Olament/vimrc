@@ -1,20 +1,17 @@
-"
-" A (not so) minimal vimrc.
-"
-
-" You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
-" We set it explicitely to make our position clear!
 set nocompatible
 
 filetype plugin indent on  " Load plugins according to detected filetype.
+syntax enable
 syntax on                  " Enable syntax highlighting.
 
-syntax enable
-"set background=dark
-colorscheme wombat256mod
+set background=dark
+let g:gruvbox_italic=1
+" let g:gruvbox_contrast_dark='high'
+colorscheme gruvbox
+
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'gruvbox',
       \ }
 
 so ~/.vim/plugins
@@ -43,7 +40,6 @@ set lazyredraw             " Only redraw when necessary.
 set splitbelow             " Open new windows below the current window.
 set splitright             " Open new windows right of the current window.
 
-set cursorline             " Find the current line quickly.
 set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
@@ -73,3 +69,4 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
+set noshowmode             " Turn off insert status
