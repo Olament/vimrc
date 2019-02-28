@@ -11,8 +11,9 @@ syntax on                  " Enable syntax highlighting.
 
 syntax enable
 set background=dark
-" let g:solarized_termcolors=256
-colorscheme molokai
+"let g:gruvbox_termcolors=16
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 so ~/.vim/plugins
 
